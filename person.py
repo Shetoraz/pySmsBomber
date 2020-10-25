@@ -1,6 +1,7 @@
 import random
 import string
 
+
 class Person:
     def __init__(self):
         self.username = self.password = "".join(
