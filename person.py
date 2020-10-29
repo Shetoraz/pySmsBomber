@@ -13,6 +13,12 @@ class Person:
             )
             for _ in range(5)
         )
+        self.english_name = "".join(
+            random.choice(
+                "QqWwEeRrTtYyUuIiOoPpAaSsDdFfGgHhJjKkLlZzXxCcVvBbNnMm"
+            )
+            for _ in range(5)
+        )
         self.email = (
             f"{self.username}@{random.choice(['gmail.com', 'mail.ru', 'yandex.ru'])}"
         )
