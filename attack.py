@@ -4,10 +4,12 @@ from person import Person
 
 class Attack:
 
-    def perform_attack(self, serviceList):
+    # Proxy list should be added.
+
+    def perform_attack(self, serviceList, proxy=None):
         for service in serviceList:
             req = requests.post(
-                url=service.url, data=service.data, headers=service.headers)
+                url=service.url, data=service.data, headers=service.headers, proxies=proxy)
             if req.status_code == 200:
                 print(service.url + " SUCCESS!")
             else:

