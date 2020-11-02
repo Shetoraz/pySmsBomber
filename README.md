@@ -1,6 +1,6 @@
 # pySmsBomber
 
-pySmsBomber - free sms bomber. Can be used 
+pySmsBomber - free sms bomber. Сan be anyone. The responsibility lies with the user
 
 
 ## Usage
