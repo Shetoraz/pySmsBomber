@@ -6,7 +6,7 @@ pySmsBomber - free sms bomber. Сan be anyone. The responsibility lies with the 
 ## Usage
 main.py
 ```python
-#INSERT PHONE AS ARGUMENT 
+#INSERT PHONE AS ARGUMENT IN INTERNATIONAL FORMAT WITHOUT +
 
 model.fillServices('')
 model.attack_service.perform_attack(model.services)
