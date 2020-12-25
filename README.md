@@ -1,12 +1,12 @@
 # pySmsBomber
 
-pySmsBomber - free sms bomber. Сan be anyone. The responsibility lies with the user
+pySmsBomber - free sms bomber. Сan be used by anyone. The responsibility lies with the user.
 
 
 ## Usage
 main.py
 ```python
-#INSERT PHONE AS ARGUMENT IN INTERNATIONAL FORMAT WITHOUT +
+#INSERT PHONE NUMBER AS AN ARGUMENT IN INTERNATIONAL FORMAT WITHOUT "+".
 
 model.fillServices('')
 model.attack_service.perform_attack(model.services)
